@@ -123,7 +123,8 @@ export default {
         }
 
         for (let x = 0; x < this.grid[y].length; x++) {
-          if (!this.grid[y][x].lightOn) {
+          // if there is at least one light on, set it as failed
+          if (this.grid[y][x].lightOn) {
             failed = true;
             break;
           }
