@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <LightOnBoard :lightOnCount="3" :size="8" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import LightOnBoard from "./components/LightOnBoard.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    LightOnBoard,
   },
 };
 </script>
@@ -22,6 +22,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 1rem 0 0 0;
 }
 </style>
