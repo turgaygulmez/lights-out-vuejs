@@ -19,7 +19,7 @@ Upon user click, we determine the clicked cell coordinate as first thing. Then t
 
 We also need to toggle the four adjacent lights which are left, right, top and buttom lights of the selected cell.
 
-In order to find out which lights to toggle. We will use array indexes. Since 
+In order to find out which lights to toggle. We will use array indexes.  
 
 ```javascript
 
@@ -31,7 +31,7 @@ In order to find out which lights to toggle. We will use array indexes. Since
       ];
 ```
 
-summing x and y coordinate (outter and inner idexes of the array) with above directions will give us the four adjacent lights.
+Summing x and y coordinate (outter and inner idexes of the array) with above directions will give us the four adjacent lights.
 
 We also need to handle adjacent lights which are out of the array bound. Therefore before adjacent lights are toggled, we need to check whether they are in the array range or not.
 
