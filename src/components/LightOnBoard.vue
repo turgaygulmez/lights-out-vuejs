@@ -72,7 +72,7 @@ export default {
       this.failed = true;
     },
     randomizeLight: function () {
-      for (let index = 0; index < this.lightOnCount - 1; index++) {
+      for (let index = 0; index < this.lightOnCount; index++) {
         let x = Math.floor(Math.random() * Math.floor(this.size));
         let y = Math.floor(Math.random() * Math.floor(this.size));
 

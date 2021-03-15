@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <LightOnBoard :lightOnCount="4" :size="5" />
+    <LightOnBoard :lightOnCount="3" :size="5" />
   </div>
 </template>
 
