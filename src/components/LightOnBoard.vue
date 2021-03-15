@@ -72,9 +72,15 @@ export default {
       this.failed = true;
     },
     randomizeLight: function () {
-      for (let index = 0; index < this.lightOnCount; index++) {
-        var x = Math.floor(Math.random() * Math.floor(this.size));
-        var y = Math.floor(Math.random() * Math.floor(this.size));
+      for (let index = 0; index < this.lightOnCount - 1; index++) {
+        let x = Math.floor(Math.random() * Math.floor(this.size));
+        let y = Math.floor(Math.random() * Math.floor(this.size));
+
+        // in case randomized cell already ligted on
+        while (this.grid[x][y].lightOn) {
+          x = Math.floor(Math.random() * Math.floor(this.size));
+          y = Math.floor(Math.random() * Math.floor(this.size));
+        }
 
         this.grid[x][y].lightOn = true;
       }
