@@ -39,7 +39,7 @@ Last but not least. Enjoy the game :)
 
 ## Enviroment and requirements
 
-- [NodeJS version 13+](https://nodejs.org/en/) or higher needs to be installed due to node-sass
+- Install [NodeJS version 13+](https://nodejs.org/en/) 
 - For better and clean code experience enable VS Code [Vtur extension](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 - run <code>npm run install</code> to install all dependencies
 
